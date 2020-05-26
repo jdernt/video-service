@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+	<title>Видеосервис</title>
+</head>
+
+<body class="scroll-block">
+
+<header class="header">
+	<div class="container">
+		<div class="header__flex">
+			<h1 class="header__title title"><a href="#">Видеосервис</a></h1>
+			<form action="" class="header__search">
+				<input type="text" class="header__searchbar input" placeholder="Поиск...">
+				<input type="submit" class="header__searchbar_btn" value="Найти">
+			</form>
+			<button class="header__login button">Войти</button>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="" class="header__films header__link header__link_active">Фильмы</a>
+				</li>
+				<li class="header__item">
+					<a href="" class="header__tvprogram header__link">Телеканалы</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main class="main">
+
+	<div class="modal">
+		<div class="modal__window">
+			<h2 class="modal__title title">Вход</h2>
+			<form action="" class="modal__form">
+				<input type="text" class="modal__input_login input" placeholder="Логин" maxlength="20">
+				<input type="text" class="modal__input_password input" placeholder="Пароль">
+				<div>
+					<input type="checkbox" id="remember" class="modal_checkbox">
+					<label for="remember">Запомнить</label>
+				</div>
+				<input type="submit" class="modal__login button" value="Войти">
+			</form>
+		</div>
+	</div>
+
+	<section class="latest">
+		<div class="container">
+			<h2 class="latest__title title">🔥 Новинки</h2>
+			<ul class="latest__list list">
+				<li class="latest__item">
+					<div class="latest__content">
+						<img src="img/latest11.jpg" alt="" class="latest__img">
+						<p class="latest__info">
+							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+						</p>
+					</div>
+					<h3 class="latest__item__title subtitle">
+						<a href="">Мульт в кино. Выпуск №103. Некогда грустить!</a>
+					</h3>
+				</li>
+				<li class="latest__item">
+					<div class="latest__content">
+						<img src="img/latest22.jpg" alt="" class="latest__img">
+						<p class="latest__info">
+							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+						</p>
+					</div>
+					<h3 class="latest__item__title subtitle">
+						<a href="">Новый Бэтмен</a>
+					</h3>
+				</li>
+				<li class="latest__item">
+					<div class="latest__content">
+						<img src="img/latest33.jpg" alt="" class="latest__img">
+						<p class="latest__info">
+							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+						</p>
+					</div>
+					<h3 class="latest__item__title subtitle">
+						<a href="">
+							Однажды... в Голливуде
+						</a>
+					</h3>
+				</li>
+				<li class="latest__item">
+					<div class="latest__content">
+						<img src="img/latest44.jpg" alt="" class="latest__img">
+						<p class="latest__info">
+							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+						</p>
+					</div>
+					<h3 class="latest__item_title subtitle">
+						<a href="">Стриптизёрши</a>
+					</h3>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="genre">
+		<div class="container">
+			<h2 class="genre__title title">Жанры</h2>
+			<ul class="genre__list list">
+				<li class="genre__item genre__item_bg1">
+					<a href="#" class="genre__link">
+						<img src="img/comedy.png" alt="">
+						<h3 class="genre__item__title subtitle">Комедии</h3>
+					</a>
+				</li>
+				<li class="genre__item genre__item_bg2">
+					<a href="" class="genre__link">
+						<img src="img/drama.png" alt="">
+						<h3 class="genre__item__title subtitle">Драмы</h3>
+					</a>
+				</li>
+				<li class="genre__item genre__item_bg3">
+					<a href="" class="genre__link">
+						<img src="img/fantasy.png" alt="">
+						<h3 class="genre__item__title subtitle">Фантастика</h3>
+					</a>
+				</li>
+				<li class="genre__item genre__item_bg4">
+					<a href="" class="genre__link">
+						<img src="img/horror.png" alt="">
+						<h3 class="genre__item__title subtitle">Ужасы</h3>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="channel hidden mCustomScrollbar" data-mcs-theme="dark">
+		<div class="container">
+			<ul class="channel__list scroll-block">
+				<li class="channel__item channel__item_bg1">
+					<h2 class="channel__title title">
+						<a href="" class="channel__link">Первый канал</a>
+					</h2>
+					<ul class="channel__program">
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">13:00</span>
+								<span class="channel__show__title">Новости (с субтитрами)</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">14:00</span>
+								<span class="channel__show__title">Давай поженимся</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">15:00</span>
+								<span class="channel__show__title">Другие новости</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="channel__item channel__item_bg2">
+					<h2 class="channel__title title">
+						<a href="" class="channel__link">2x2</a>
+					</h2>
+					<ul class="channel__program">
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">13:00</span>
+								<span class="channel__show__title">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">14:00</span>
+								<span class="channel__show__title">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">15:00</span>
+								<span class="channel__show__title">БУРДАШЕВ. Сезон 1, 20 серия</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="channel__item channel__item_bg3">
+					<h2 class="channel__title title">
+						<a href="" class="channel__link">РБК</a>
+					</h2>
+					<ul class="channel__program">
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">13:00</span>
+								<span class="channel__show__title">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">14:00</span>
+								<span class="channel__show__title">ДЕНЬ. Главные темы</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">15:00</span>
+								<span class="channel__show__title">Главные новости</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="channel__item channel__item_bg4">
+					<h2 class="channel__title title">
+						<a href="" class="channel__link">AMEDIA PREMIUM</a>
+					</h2>
+					<ul class="channel__program">
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">13:00</span>
+								<span class="channel__show__title">Клиент всегда мёртв</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">14:00</span>
+								<span class="channel__show__title">Голодные игры: Сойка-пересмешница. Часть&nbsp;I</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">15:00</span>
+								<span class="channel__show__title">Секс в большом городе</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="channel__item channel__item_bg4">
+					<h2 class="channel__title title">
+						<a href="" class="channel__link">AMEDIA PREMIUM</a>
+					</h2>
+					<ul class="channel__program">
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">13:00</span>
+								<span class="channel__show__title">Клиент всегда мёртв</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">14:00</span>
+								<span class="channel__show__title">Голодные игры: Сойка-пересмешница. Часть&nbsp;I</span>
+							</a>
+						</li>
+						<li class="channel__show">
+							<a href="" class="channel__link">
+								<span class="channel__time">15:00</span>
+								<span class="channel__show__title">Секс в большом городе</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+
+
+
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__info">
+			<p class="footer__adress text">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+			<p class="footer__contacts text">
+				<a href="tel:+73412938861">+7 (3412) 93-88-61</a>,
+				<a href="tel:432929">43-29-29</a>
+			</p>
+			<a href="" class="footer__link">htc-cs.ru</a>
+		</div>
+	</div>
+</footer>
+
+</body>
+
+</html>

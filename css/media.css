@@ -1,0 +1,18 @@
+@media (max-width: 1150px) {
+	.list {
+		flex-wrap: wrap;
+	}
+
+	.latest__item {
+		min-width: 48%;
+	}
+
+	.genre__item {
+		min-width: 48%;
+	}
+
+}
+
+@media (max-width: 670px) {
+
+}

@@ -3,16 +3,57 @@
 		flex-wrap: wrap;
 	}
 
-	.latest__item {
-		min-width: 48%;
-	}
-
-	.genre__item {
+	.latest__item,
+	.genre__item  {
 		min-width: 48%;
 	}
 
 }
 
 @media (max-width: 670px) {
+	.list {
+		flex-direction: column;
+	}
 
+	.latest__item,
+	.genre__item  {
+		min-width: 100%;
+	}
+
+	.header__flex {
+		flex-wrap: wrap;
+	}
+
+	.header__search {
+		order: 1;
+		min-width: 100%;
+	}
+
+	.header__searchbar {
+		margin-left: auto;
+	}
+
+	.header__searchbar_btn {
+		margin-right: auto;
+	}
+
+	.channel__item {
+		padding-left: 27%;
+		background-position: 10% center;
+	}
+
+	.channel__item_bg2 {
+		background-position: 5% center;
+	}
+}
+
+@media (max-width: 540px) {
+	.channel__item {
+		padding-left: 2%;
+		background-image: none;
+	}
+
+	.header__title {
+		font-size: 22px;
+	}
 }

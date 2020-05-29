@@ -1,3 +1,6 @@
+@import url('_fonts.css');
+@import url('_normalize.css');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -23,7 +26,7 @@ ul {
 	list-style: none;
 }
 
-/*Кастомный скролл*/
+/* Кастомный скролл */
 .scroll-block {
 	overflow-y: scroll;
 }
@@ -196,16 +199,18 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex: 1;
 	position: relative;
 	margin-bottom: 31px;
 }
 
 .header__search {
-	position: absolute;
+	/* position: absolute;
 	left: 32.97%;
 	right: 32.97%;
 	top: 40.5%;
-	bottom: 10%;
+	bottom: 10%; */
+	display: flex;
 }
 
 .header__searchbar {
@@ -213,12 +218,12 @@ ul {
 }
 
 .header__searchbar_btn {
-	position: absolute;
+	/* position: absolute;
 	left: 79.5%;
 	right: 0%;
 	top: -18%;
-	bottom: 24%;
-	margin-left: 32px;
+	bottom: 24%; */
+	margin-left: 20px;
 	border: 0;
 	font-weight: 500;
 	line-height: 19px;
@@ -228,7 +233,7 @@ ul {
 	cursor: pointer;
 }
 
-.header__auth {
+.header__userbar {
 	display: flex;
 }
 
@@ -307,10 +312,30 @@ ul {
 	width: 100%;
 	max-height: 370px;
 	margin-bottom: 16px;
+	border: 0;
+	border-radius: 8px;
+	background-position: center center;
+	background-size: cover;
 	cursor: pointer;
 }
 
-.latest__img {
+.latest__bg1 {
+	background-image: url('../img/latest1.png');
+}
+
+.latest__bg2 {
+	background-image: url('../img/latest2.png');
+}
+
+.latest__bg3 {
+	background-image: url('../img/latest3.png');
+}
+
+.latest__bg4 {
+	background-image: url('../img/latest4.png');
+}
+
+/*.latest__img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -320,7 +345,7 @@ ul {
 	border-radius: 8px;
 	object-fit: cover;
 	z-index: -1;
-}
+} */
 
 .latest__info {
 	position: absolute;

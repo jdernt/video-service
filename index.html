@@ -5,8 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/_fonts.css">
-	<link rel="stylesheet" href="css/_normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 
@@ -25,7 +23,9 @@
 				<input type="text" class="header__searchbar input" placeholder="Поиск...">
 				<input type="submit" class="header__searchbar_btn" value="Найти">
 			</form>
-			<button class="header__login button">Войти</button>
+			<div class="header__auth">
+				<button class="header__login button">Войти</button>
+			</div>
 		</div>
 		<nav class="header__nav">
 			<ul class="header__list">
@@ -62,8 +62,8 @@
 			<h2 class="latest__title title">🔥 Новинки</h2>
 			<ul class="latest__list list">
 				<li class="latest__item">
-					<div class="latest__content">
-						<img src="img/latest11.jpg" alt="" class="latest__img">
+					<div class="latest__content latest__bg1">
+						<!-- <img src="img/latest1.png" alt="" class="latest__img"> -->
 						<p class="latest__info">
 							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
 						</p>
@@ -73,8 +73,8 @@
 					</h3>
 				</li>
 				<li class="latest__item">
-					<div class="latest__content">
-						<img src="img/latest22.jpg" alt="" class="latest__img">
+					<div class="latest__content latest__bg2">
+						<!-- <img src="img/latest2.png" alt="" class="latest__img"> -->
 						<p class="latest__info">
 							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
 						</p>
@@ -84,8 +84,8 @@
 					</h3>
 				</li>
 				<li class="latest__item">
-					<div class="latest__content">
-						<img src="img/latest33.jpg" alt="" class="latest__img">
+					<div class="latest__content latest__bg3">
+						<!-- <img src="img/latest3.png" alt="" class="latest__img"> -->
 						<p class="latest__info">
 							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
 						</p>
@@ -97,8 +97,8 @@
 					</h3>
 				</li>
 				<li class="latest__item">
-					<div class="latest__content">
-						<img src="img/latest44.jpg" alt="" class="latest__img">
+					<div class="latest__content latest__bg4">
+						<!-- <img src="img/latest4.png" alt="" class="latest__img"> -->
 						<p class="latest__info">
 							Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
 						</p>
@@ -143,7 +143,7 @@
 		</div>
 	</section>
 
-	<section class="channel hidden mCustomScrollbar" data-mcs-theme="dark">
+	<section class="channel hidden">
 		<div class="container">
 			<ul class="channel__list scroll-block">
 				<li class="channel__item channel__item_bg1">
@@ -235,7 +235,7 @@
 						<li class="channel__show">
 							<a href="" class="channel__link">
 								<span class="channel__time">14:00</span>
-								<span class="channel__show__title">Голодные игры: Сойка-пересмешница. Часть&nbsp;I</span>
+								<span class="channel__show__title">Голодные игры: Сойка-&nbsp;пересмешница. Часть&nbsp;I</span>
 							</a>
 						</li>
 						<li class="channel__show">
@@ -260,7 +260,7 @@
 						<li class="channel__show">
 							<a href="" class="channel__link">
 								<span class="channel__time">14:00</span>
-								<span class="channel__show__title">Голодные игры: Сойка-пересмешница. Часть&nbsp;I</span>
+								<span class="channel__show__title">Голодные игры: Сойка-&nbsp;пересмешница. Часть&nbsp;I</span>
 							</a>
 						</li>
 						<li class="channel__show">
@@ -289,7 +289,7 @@
 				<a href="tel:+73412938861">+7 (3412) 93-88-61</a>,
 				<a href="tel:432929">43-29-29</a>
 			</p>
-			<a href="" class="footer__link">htc-cs.ru</a>
+			<a href="https://htc-cs.ru/" class="footer__link">htc-cs.ru</a>
 		</div>
 	</div>
 </footer>

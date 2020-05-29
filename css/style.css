@@ -41,7 +41,7 @@ ul {
 
 .scroll-block::-webkit-scrollbar-thumb {
 	border-radius: 4px;
-	background: #F2F2F2;
+	background: #fff;
 }
 
 .scroll-block:hover::-webkit-scrollbar-thumb {
@@ -459,15 +459,18 @@ ul {
 }
 
 .channel__item {
-	margin-bottom: 17px;
 	padding-top: 1.7%;
 	padding-right: 2%;
-	padding-bottom: 1.5%;
+	padding-bottom: 2.5%;
 	padding-left: 34.1%;
 	border: 0;
 	border-radius: 8px;
 	background-color: #F2F2F2;
 	background-repeat: no-repeat;
+}
+
+.channel__item:not(:last-child) {
+	margin-bottom: 17px;
 }
 
 .channel__item_bg1 {

@@ -15,8 +15,6 @@ InitialState();
 
 function addToStorage(){
 	let content = $('.header__auth').html();
-	console.log(content);
-
 	localStorage.setItem('login', content);
 }
 
@@ -83,6 +81,8 @@ function auth(c){
 			</div>
 		`);
 
+		localStorage.setItem('nickname', userName);
+
 		userName = $('.modal__input_login').val('');
 		userPassword = $('.modal__input_password').val('');
 
@@ -101,23 +101,25 @@ $('body').on('click', '.header__logout', function(){
 	localStorage.removeItem('login');
 });
 
-
 // возможность ренейма
 
 $('body').on('click', '.header__user', function(){
-
-	let userNewName;
 
 	$('.header__user').remove();
 	$('.header__userbar').prepend(`
 		<input type="text" class="header__login_input input">
 	`);
 
-	$('header').click(function(event){
-		if (event.target == this) {
+	$('.header__login_input').val(localStorage.getItem('nickname'));
 
-		 userNewName = $('.header__login_input').val();
+});
 
+$('.header__flex').click(function(event){
+	if (event.target == this) {
+
+	 let userNewName = $('.header__login_input').val();
+
+		if (userNewName.length !== 0) {
 			$('.header__login_input').remove();
 			$('.header__userbar').prepend(`
 				<div class="header__user">${userNewName}</div>
@@ -126,31 +128,16 @@ $('body').on('click', '.header__user', function(){
 			localStorage.removeItem('login');
 			addToStorage();
 
+			localStorage.setItem('nickname', userNewName);
+
 			userNewName = $('.header__login_input').val('');
 
+		} else {
+			$('.header__login_input').remove();
+			$('.header__auth').html(localStorage.getItem('login'));
 		};
-	});
+
+	};
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })

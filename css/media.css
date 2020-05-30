@@ -62,4 +62,28 @@
 	.header__title {
 		font-size: 20px;
 	}
+
+	.header__search {
+		left: 1%;
+	}
+
+	.header__searchbar {
+		min-width: 77%;
+		background-color: transparent;
+	}
+
+	.header__searchbar_btn {
+		left: 75%;
+	}
+}
+
+@media (max-width: 329px) {
+	.header__item {
+		/* margin-bottom: 15px; */
+		font-size: 24px;
+	}
+
+	.video-service {
+		display: none;
+	}
 }

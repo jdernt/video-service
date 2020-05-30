@@ -8,7 +8,7 @@ function InitialState(){
 	} else {
 		$('.header__login').hide();
 		$('.header__auth').html(localStorage.getItem('login'));
-	}
+	};
 };
 
 InitialState();
@@ -16,7 +16,7 @@ InitialState();
 function addToStorage(){
 	let content = $('.header__auth').html();
 	localStorage.setItem('login', content);
-}
+};
 
 // переключение между табами
 
@@ -57,7 +57,7 @@ $('.modal').click(function(event){
 	if(event.target == this) {
 		$(this).hide();
 		$('body').removeClass('no__scroll');
-	}
+	};
 });
 
 // функция авторизации
@@ -92,13 +92,14 @@ function auth(c){
 
 $('.modal__login').click(auth);
 
-// вохможность разлогиниться по клику
+// возможность разлогиниться по клику
 
 $('body').on('click', '.header__logout', function(){
 	$('.header__userbar').remove();
 	$('.header__login').show();
 
 	localStorage.removeItem('login');
+	localStorage.removeItem('nickname');
 });
 
 // возможность ренейма
@@ -107,37 +108,39 @@ $('body').on('click', '.header__user', function(){
 
 	$('.header__user').remove();
 	$('.header__userbar').prepend(`
-		<input type="text" class="header__login_input input">
+		<input type="text" class="header__login_input input" maxlength="20">
 	`);
 
 	$('.header__login_input').val(localStorage.getItem('nickname'));
 
 });
 
-$('.header__flex').click(function(event){
-	if (event.target == this) {
-
-	 let userNewName = $('.header__login_input').val();
+$(document).mouseup(function (e){
+	let div = $('.header__login_input');
+	// let userNewName = $('.header__login_input').val();
+	if (!div.is(e.target)) {
+		let userNewName = $('.header__login_input').val();
 
 		if (userNewName.length !== 0) {
-			$('.header__login_input').remove();
-			$('.header__userbar').prepend(`
-				<div class="header__user">${userNewName}</div>
-			`);
+		  $('.header__login_input').remove();
+		  $('.header__userbar').prepend(`
+		   <div class="header__user">${userNewName}</div>
+		  `);
 
-			localStorage.removeItem('login');
-			addToStorage();
+		  localStorage.removeItem('login');
+		  addToStorage();
 
-			localStorage.setItem('nickname', userNewName);
+		  localStorage.setItem('nickname', userNewName);
 
-			userNewName = $('.header__login_input').val('');
+		  userNewName = $('.header__login_input').val('');
 
 		} else {
-			$('.header__login_input').remove();
-			$('.header__auth').html(localStorage.getItem('login'));
+		  $('.header__login_input').remove();
+		  $('.header__auth').html(localStorage.getItem('login'));
 		};
-
 	};
 });
+
+
 
 })

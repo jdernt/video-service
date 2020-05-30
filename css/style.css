@@ -193,6 +193,7 @@ ul {
 	background-image: url('../img/sign.svg');
 	background-repeat: no-repeat;
 	background-position: center left;
+	background-size: contain;
 }
 
 .header__flex {
@@ -205,24 +206,22 @@ ul {
 }
 
 .header__search {
-	/* position: absolute;
+	position: absolute;
 	left: 32.97%;
 	right: 32.97%;
-	top: 40.5%;
-	bottom: 10%; */
-	display: flex;
+	top: 40%;
+	/* display: flex; */
 }
 
 .header__searchbar {
 	min-width: 79%;
+	background-color: transparent;
 }
 
 .header__searchbar_btn {
-	/* position: absolute;
-	left: 79.5%;
-	right: 0%;
-	top: -18%;
-	bottom: 24%; */
+	position: absolute;
+	left: 82.5%;
+	top: 3%;
 	margin-left: 20px;
 	border: 0;
 	font-weight: 500;
@@ -237,8 +236,13 @@ ul {
 	display: flex;
 }
 
+.header__login_input {
+	max-width: 150px;
+}
+
 .header__user {
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .header__logout {
@@ -249,10 +253,6 @@ ul {
 	background-color: transparent;
 	cursor: pointer;
 	outline: none;
-}
-
-.header__input_login {
-	width: 100%;
 }
 
 .header__nav {
@@ -447,7 +447,6 @@ ul {
 	color: #fff;
 }
 
-
 /*Раздел телеканалов*/
 .channel {
 	margin-top: 27px;
@@ -461,7 +460,7 @@ ul {
 .channel__item {
 	padding-top: 1.7%;
 	padding-right: 2%;
-	padding-bottom: 2.5%;
+	padding-bottom: 1.5%;
 	padding-left: 34.1%;
 	border: 0;
 	border-radius: 8px;

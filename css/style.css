@@ -73,9 +73,9 @@ ul {
 .button {
 	padding: 9px 35px;
 	border: 0;
+	border-radius: 4px;
 	font-weight: 500;
 	color: #fff;
-	border-radius: 4px;
 	background-color: #E5261E;
 	cursor: pointer;
 	outline: none;
@@ -354,11 +354,11 @@ ul {
 	padding: 16px;
 	width: 100%;
 	height: 100%;
+	border: 0;
+	border-radius: 8px;
 	line-height: 140%;
 	color: #F2F2F2;
 	background-color: rgba(51, 51, 51, 0.8);
-	border: 0;
-	border-radius: 8px;
 	opacity: 0;
 	transition: all 0.4s ease-in-out;
 }
@@ -396,43 +396,43 @@ ul {
 
 .genre__item_bg2 {
 	background: linear-gradient(136.27deg,
-	rgba(242, 153, 74, 0.8) 8.44%,
-	rgba(235, 87, 87, 0.8) 91.36%
+		rgba(242, 153, 74, 0.8) 8.44%,
+		rgba(235, 87, 87, 0.8) 91.36%
 	);
 }
 
 .genre__item_bg2:hover {
 	background: linear-gradient(136.27deg,
-	rgba(242, 153, 74, 1) 8.44%,
-	rgba(235, 87, 87, 1) 91.36%
+		rgba(242, 153, 74, 1) 8.44%,
+		rgba(235, 87, 87, 1) 91.36%
 	);
 }
 
 .genre__item_bg3 {
 	background: linear-gradient(136.27deg,
-	rgba(86, 204, 242, 0.8) 8.44%,
-	rgba(47, 128, 237, 0.8) 91.36%
+		rgba(86, 204, 242, 0.8) 8.44%,
+		rgba(47, 128, 237, 0.8) 91.36%
 	);
 }
 
 .genre__item_bg3:hover {
 	background: linear-gradient(136.27deg,
-	rgba(86, 204, 242, 1) 8.44%,
-	rgba(47, 128, 237, 1) 91.36%
+		rgba(86, 204, 242, 1) 8.44%,
+		rgba(47, 128, 237, 1) 91.36%
 	);
 }
 
 .genre__item_bg4 {
 	background: linear-gradient(136.27deg,
-	rgba(130, 130, 130, 0.8) 8.44%,
-	rgba(51, 51, 51, 0.8) 91.36%
+		rgba(130, 130, 130, 0.8) 8.44%,
+		rgba(51, 51, 51, 0.8) 91.36%
 	);
 }
 
 .genre__item_bg4:hover {
 	background: linear-gradient(136.27deg,
-	rgba(130, 130, 130, 1) 8.44%,
-	rgba(51, 51, 51, 1) 91.36%
+		rgba(130, 130, 130, 1) 8.44%,
+		rgba(51, 51, 51, 1) 91.36%
 	);
 }
 

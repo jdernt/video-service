@@ -115,32 +115,33 @@ $('body').on('click', '.header__user', function(){
 
 });
 
+function rename() {
+
+	let userNewName = $('.header__login_input').val();
+
+	if (userNewName.length !== 0) {
+		$('.header__login_input').remove();
+		$('.header__userbar').prepend(`
+			<div class="header__user">${userNewName}</div>
+		`);
+
+		localStorage.removeItem('login');
+		addToStorage();
+
+		localStorage.setItem('nickname', userNewName);
+
+		userNewName = $('.header__login_input').val('');
+
+	} else {
+		$('.header__login_input').remove();
+		$('.header__auth').html(localStorage.getItem('login'));
+	};
+};
+
 $(document).mouseup(function (e){
 	let div = $('.header__login_input');
-	// let userNewName = $('.header__login_input').val();
-	if (!div.is(e.target)) {
-		let userNewName = $('.header__login_input').val();
-
-		if (userNewName.length !== 0) {
-		  $('.header__login_input').remove();
-		  $('.header__userbar').prepend(`
-		   <div class="header__user">${userNewName}</div>
-		  `);
-
-		  localStorage.removeItem('login');
-		  addToStorage();
-
-		  localStorage.setItem('nickname', userNewName);
-
-		  userNewName = $('.header__login_input').val('');
-
-		} else {
-		  $('.header__login_input').remove();
-		  $('.header__auth').html(localStorage.getItem('login'));
-		};
-	};
+	if (!div.is(e.target)) rename();
 });
-
 
 
 })

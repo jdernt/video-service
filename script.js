@@ -119,23 +119,25 @@ function rename() {
 
 	let userNewName = $('.header__login_input').val();
 
-	if (userNewName !== undefined && userNewName.length !== 0) {
-		$('.header__login_input').remove();
-		$('.header__userbar').prepend(`
-			<div class="header__user">${userNewName}</div>
-		`);
+	if (userNewName !== undefined) {
+		if (userNewName.length !== 0) {
+			$('.header__login_input').remove();
+			$('.header__userbar').prepend(`
+				<div class="header__user">${userNewName}</div>
+			`);
 
-		localStorage.removeItem('login');
-		addToStorage();
+			localStorage.removeItem('login');
+			addToStorage();
 
-		localStorage.setItem('nickname', userNewName);
+			localStorage.setItem('nickname', userNewName);
 
-		userNewName = $('.header__login_input').val('');
+			userNewName = $('.header__login_input').val('');
 
-	} else {
-		$('.header__login_input').remove();
-		$('.header__auth').html(localStorage.getItem('login'));
-	};
+		} else {
+			$('.header__login_input').remove();
+			$('.header__auth').html(localStorage.getItem('login'));
+		};
+	};	
 };
 
 $(document).mouseup(function (e){

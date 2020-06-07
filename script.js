@@ -119,7 +119,7 @@ function rename() {
 
 	let userNewName = $('.header__login_input').val();
 
-	if (userNewName.length !== 0) {
+	if (userNewName !== undefined && userNewName.length !== 0) {
 		$('.header__login_input').remove();
 		$('.header__userbar').prepend(`
 			<div class="header__user">${userNewName}</div>

@@ -97,7 +97,7 @@ document.querySelector('.modal__login').addEventListener('click', auth);
 
 document.body.addEventListener('click', function(){
 	if (event.target == document.querySelector('.header__logout')) {
-		document.querySelector('.header__userbar').remove();
+		$('.header__userbar').remove();
 
 		headerLogin.style.display = 'block';
 

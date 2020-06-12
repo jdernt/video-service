@@ -150,9 +150,8 @@ document.body.addEventListener('click', function(){
 $('body').on('click', '.header__user', function(){
 
 	$('.header__user').remove();
-	$('.header__userbar').prepend(`
-		<input type="text" class="header__login_input input" maxlength="20">
-	`);
+	document.querySelector('.header__userbar').insertAdjacentHTML('afterbegin', '<input type="text" class="header__login_input input" maxlength="20">');
+
 
 	$('.header__login_input').val(localStorage.getItem('nickname'));
 
@@ -166,9 +165,8 @@ function rename() {
 	if (undefined !== userNewName) {
 		if (userNewName.length !== 0) {
 			$('.header__login_input').remove();
-			$('.header__userbar').prepend(`
-				<div class="header__user">${userNewName}</div>
-			`);
+			document.querySelector('.header__userbar').insertAdjacentHTML('afterbegin', '<div class="header__user">${userNewName}</div>');
+			document.querySelector('.header__user').textContent = userNewName;
 
 			localStorage.removeItem('login');
 			addToStorage();

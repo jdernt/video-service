@@ -108,45 +108,6 @@ document.body.addEventListener('click', function(){
 
 // возможность ренейма
 
-// document.body.addEventListener('click', function(){
-// 	if (event.target.closest('.header__user')) {
-// 		document.querySelector('.header__user').remove();
-
-// 		document.querySelector('.header__userbar').insertAdjacentHTML('afterbegin', '<input type="text" class="header__login_input input" maxlength="20">');
-
-// 		// loginInput.value = localStorage.getItem('nickname');
-// 	};
-// });
-
-// function rename() {
-// 	// if (loginInput !== null) {
-// 		let userNewName = loginInput.value;
-
-// 		if (userNewName.length !== 0) {
-// 			loginInput.remove();
-
-// 			document.querySelector('.header__userbar').insertAdjacentHTML('afterbegin', '<div class="header__user"></div>');
-// 			document.querySelector('.header__user').textContent = userNewName;
-
-// 			localStorage.removeItem('login');
-// 			addToStorage();
-
-// 			localStorage.setItem('nickname', userNewName);
-
-// 			userNewName = $('.header__login_input').val('');
-
-// 		} else {
-// 			loginInput.remove();
-// 			headerAuth.innerHTML = localStorage.getItem('login');
-// 		};
-// 	// };
-// };
-
-// $(document).mouseup(function (e){
-// 	let div = $('.header__login_input');
-// 	if (!div.is(e.target)) rename();
-// });
-
 $('body').on('click', '.header__user', function(){
 
 	$('.header__user').remove();
@@ -187,4 +148,4 @@ $(document).mouseup(function (e){
 	if (!div.is(e.target)) rename();
 });
 
-})
+});

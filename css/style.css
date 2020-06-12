@@ -453,6 +453,7 @@ ul {
 }
 
 .channel__list {
+	padding-right: 10px;
 	max-height: 696px;
 	overflow-y: scroll;
 }

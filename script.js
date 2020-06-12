@@ -96,7 +96,7 @@ document.querySelector('.modal__login').addEventListener('click', auth);
 // возможность разлогиниться по клику
 
 document.body.addEventListener('click', function(){
-	if (event.target.closest('.header__logout')) {
+	if (event.target == document.querySelector('.header__logout')) {
 		document.querySelector('.header__userbar').remove();
 
 		headerLogin.style.display = 'block';

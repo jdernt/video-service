@@ -77,7 +77,7 @@ function auth(c) {
 		modalWindow.style.display = 'none';
 		document.body.classList.remove('no__scroll');
 
-		headerLogin.style.display = 'none';
+		headerLogin.remove();
 
 		headerAuth.insertAdjacentHTML('beforeend', '<div class="header__userbar"><div class="header__user"></div><button class="header__logout">Выйти</button></div>');
 		document.querySelector('.header__user').textContent = userName;
@@ -99,6 +99,7 @@ document.body.addEventListener('click', function(){
 	if (event.target == document.querySelector('.header__logout')) {
 		$('.header__userbar').remove();
 
+		headerAuth.appendChild(headerLogin);
 		headerLogin.style.display = 'block';
 
 		localStorage.removeItem('login');

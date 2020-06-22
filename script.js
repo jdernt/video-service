@@ -77,7 +77,7 @@ function auth(c) {
 		modalWindow.style.display = 'none';
 		document.body.classList.remove('no__scroll');
 
-		headerLogin.remove();
+		$(headerLogin).remove();
 
 		headerAuth.insertAdjacentHTML('beforeend', '<div class="header__userbar"><div class="header__user"></div><button class="header__logout">Выйти</button></div>');
 		document.querySelector('.header__user').textContent = userName;

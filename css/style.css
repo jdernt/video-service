@@ -525,6 +525,10 @@ ul {
 	background-position: left center;
 }
 
+.footer__address {
+	font-style: normal;
+}
+
 .text {
 	margin-bottom: 9px;
 }
